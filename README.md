@@ -1,3 +1,3 @@
 # PSaclaide
 
-Frontend du serveur PSaclaide
+Frontend du site web PSaclaide
