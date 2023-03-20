@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Completez votre profil afin de finaliser votre inscription</h2>
+        <form action="#">
+            <input type="text" placeholder="Nom" required />
+            <input type="text" placeholder="Prénom" required />
+            <input type="date" placeholder="Date de naissance" required />
+            <select required>
+                <option value="" disabled selected>Département</option>
+                <option value="polytech">Polytech</option>
+                <option value="centrale">Centrale</option>
+                <option value="ens">ENS</option>
+                <option value="universite_paris_saclay">Université Paris-Saclay</option>
+            </select>
+            <label class="checkbox-container">
+                Je souhaite également être professeur
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+            </label>
+            <button type="submit">Finaliser mon inscription</button>
+        </form>
+    </div>
+</body>
+
+</html>
