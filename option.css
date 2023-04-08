@@ -1,0 +1,91 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #FF416C;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Conteneur des options */
+.options-container {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.options-container h2 {
+    color: #FF416C;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input {
+    border: 1px solid #FF416C;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+label {
+    color: #FF416C;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Bouton de confirmation */
+.confirm-button {
+    background-color: #FF416C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+    background-color:#FF4B2B;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .options-container {
+        margin: 20px 10px;
+    }
+}

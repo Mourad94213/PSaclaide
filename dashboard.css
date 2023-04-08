@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #f1f1f1;
+}
+
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #FF4B2B;
+}
+
+button:focus {
+    outline: none;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    display: block;
+    padding: 10px 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-container:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FF416C;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.previous-courses, .upcoming-courses {
+    background-color: #FF416C;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .dashboard-container {
+        margin: 20px 10px;
+    }
+}
