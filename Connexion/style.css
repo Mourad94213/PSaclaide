@@ -55,7 +55,9 @@ button {
 	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+	transition: transform 80ms ease-in-out;
+	box-shadow: 0 8px 24px rgba(0,32,68,.45),
+        0 8px 8px rgba(0,32,68,.45);
 }
 
 button:active {
@@ -70,6 +72,13 @@ button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0,32,68,.45);
+    color: #c19292;
+}
+
 
 form {
 	background-color: #FFFFFF;

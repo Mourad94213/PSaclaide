@@ -21,6 +21,12 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+logo {
+    text-align:center;
+    margin:auto;
+    display:flex;
+}
+
 button {
     background: none;
     border: none;
@@ -31,10 +37,11 @@ button {
     transition: color 0.3s;
 }
 
-button:hover {
-    color: #FF4B2B;
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0,32,68,.45);
+    color: #711C1C;
 }
-
 button:focus {
     outline: none;
 }
@@ -351,10 +358,52 @@ input[type="checkbox"]:checked::after {
     background-color: rgba(255, 255, 255, 0.8); /* Ajout d'un effet de survol à l'info-container */
 }
 
-/* Le reste du CSS reste inchangé */
-
-
-
-/* Le reste du CSS reste inchangé */
-
-
+@media (max-width: 768px) {
+header {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo {
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+}
+    
+.logout-btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+}
+    
+.profile-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+}
+    
+.dropdown-menu {
+        right: auto;
+        left: 0;
+        top: 30px;
+}
+    
+.search-input {
+        width: 80%;
+}
+    
+.main-container {
+        flex-wrap: wrap;
+        justify-content: center;
+}
+    
+.filters-container {
+        width: 80%;
+        margin-bottom: 20px;
+}
+    
+.results-container {
+        width: 80%;
+}
+}
+@media (max-width: 480px) {
+    .search-input {
+    width: 100%;
+    }
+    }

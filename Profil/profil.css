@@ -62,7 +62,8 @@ button {
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 button:active {
@@ -71,6 +72,11 @@ button:active {
 
 button:focus {
     outline: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0,32,68,.45);
+    color: #FF416C;
 }
 
 .checkbox-container {

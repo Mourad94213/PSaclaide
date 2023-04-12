@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publier une annonce de cours</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="creerannonce.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./logodetoure.png"
+          alt="logopsaclaide"
+          height="50"
+          style="float: right"
+        />
+      </div>
+      <button id="logout">
+        <i class="fas fa-sign-out-alt"></i> Déconnexion
+      </button>
+      <div class="profile-container">
+        <img src="./logopolytech.png" alt="Photo de profil" class="profile-picture" />
+        <div class="dropdown-menu">
+          <a href="#">Options</a>
+          <a href="#">Mes Cours</a>
+          <a href="#">Tableau de bord</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Publier une annonce de cours</h1>
+      <form id="annonce-form">
+        <div class="form-group">
+          <label for="matiere">Matière enseignée</label>
+          <input
+            type="text"
+            id="matiere"
+            name="matiere"
+            placeholder="Saisir la matière enseignée"
+            required
+          />        </div>
+        <div class="form-group">
+          <label for="titre">Titre de l'annonce</label>
+          <input
+            type="text"
+            id="titre"
+            name="titre"
+            placeholder="Saisir le titre de l'annonce"
+            required
+          />
+          <!--Radio pour nombre d'élève date et heure séparé lieu du cours à préciser-->
+        </div>
+        <div class="form-group">
+          <label for="date">Date et heure du cours</label>
+          <input type="datetime-local" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="nombre-eleves">Nombre d'élèves désiré</label>
+          <input
+            type="number"
+            id="nombre-eleves"
+            name="nombre-eleves"
+            placeholder="Saisir le nombre d'élèves désiré"
+            min="1"
+            max="50"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit">Publier</button>
+          <button type="reset">Réinitialiser</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
