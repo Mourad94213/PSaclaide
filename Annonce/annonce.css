@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 
+
 * {
     box-sizing: border-box;
 }
@@ -13,21 +14,20 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #FF416C;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-logo {
-    text-align:center;
-    margin:auto;
-    display:flex;
+.logo img{
+    float: left
 }
 
 button {
+    color:white;
     background: none;
     border: none;
     cursor: pointer;
@@ -39,8 +39,7 @@ button {
 
 button:hover{
     cursor: pointer;
-    background-color: rgba(0,32,68,.45);
-    color: #711C1C;
+    color: black;
 }
 button:focus {
     outline: none;
@@ -70,8 +69,8 @@ button:focus {
     min-width: 160px;
     position: absolute;
     right: 0;
-    top: 50px;
     z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-menu a {

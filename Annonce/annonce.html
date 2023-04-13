@@ -10,19 +10,22 @@
 <body>
     <header>
         <div class="logo">
-        <img src="Annonce/logodetoure.png" alt="logopsaclaide" height="50" style="float:left" />
+            <img src="../Annonce/logodetoure.png" alt="logopsaclaide" height="50" />
         </div>
-        <button id="logout">
-            <i class="fas fa-sign-out-alt"></i> Déconnexion
-        </button>
-        <div class="profile-container">
-            <img src="./img/test.jpg" alt="Photo de profil" class="profile-picture" />
-            <div class="dropdown-menu">
-                <a href="#">Options</a>
-                <a href="#">Mes Cours</a>
-                <a href="#">Tableau de bord</a>
+        <nav class="nav-right">
+            <button id="switch" class="switch-btn">Passer en professeur</button>
+            <button id="logout">
+                <i class="fas fa-sign-out-alt"></i> Déconnexion
+            </button>
+            <div class="profile-container">
+                <img src="../img/test.jpg" alt="Photo de profil" class="profile-picture" />
+                <div class="dropdown-menu">
+                    <a href="#">Options</a>
+                    <a href="#">Mes Cours</a>
+                    <a href="#">Tableau de bord</a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <div class="search-container">
         <input type="search" class="search-input" placeholder="Recherche..." logo=""/>
@@ -68,7 +71,7 @@
         <div class="results-container">
             <h3>Résultats de la recherche</h3>
             <div class="result-card">
-                <img src="test2.jpg" alt="Photo du professeur" class="teacher-picture" />
+                <img src="../img/test2.jpg" alt="Photo du professeur" class="teacher-picture" />
             </div>
             <div class="info-container">
                 <h4>Nom du professeur</h4>
