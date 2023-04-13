@@ -29,9 +29,15 @@ header {
     align-items:end;
 }
 
+b {
+    text-align: center;
+    font-weight: normal;
+    
+}
 .container {
-    margin: 50px auto;
+    margin:50px auto;
     max-width: 800px;
+    max-height: fit-content;
     padding: 0 20px;
     background-color: #FF416C;
     border-radius: 10px;
@@ -43,7 +49,45 @@ header {
     text-align: center;
     color: whitesmoke;
 }
+
+.nbeleve {
+    display: block;
     
+}
+
+select#departement {
+    border-radius: 5px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 16px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+  
+input#date {
+    border-radius: 5px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 16px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input#heure {
+    border-radius: 5px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 16px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input#descriptif{
+    height: 100px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+  
 button {
     background: none;
     border: none;
@@ -66,9 +110,21 @@ button:focus {
     outline: none;
 }
 
+.radio-buttons {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    transform: translateX(15px);
+  }
+
+.radio-button {
+    transform: translateX(10px);
+}
 #logout i {
     margin-right: 5px;
 }
+
+
 
 .profile-container {
     position: relative;
@@ -100,15 +156,20 @@ button:focus {
     padding: 10px 16px;
     text-align: left;
     text-decoration: none;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 
 .dropdown-menu a:hover {
     background-color: #f1f1f1;
+    
 }
 
 .profile-container:hover .dropdown-menu {
-    display: block;
+    display:block;
+    /*transition: .5s ease-in;*/
 }
+
 
 
     
@@ -181,6 +242,7 @@ button[type="submit"]:focus,
 button[type="reset"]:focus {
     outline: none;
 }
+
     
     /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -205,4 +267,5 @@ button[type="reset"] {
     font-size: 14px;
     padding: 8px 16px;
 }
+
 }
