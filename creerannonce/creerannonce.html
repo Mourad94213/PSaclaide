@@ -25,7 +25,7 @@
       </button>
       <div class="profile-container">
         <img src="./logopolytech.png" alt="Photo de profil" class="profile-picture" />
-        <div class="dropdown-menu">
+        <div class="dropdown-menu" id="dropdown-menu">
           <a href="#">Options</a>
           <a href="#">Mes Cours</a>
           <a href="#">Tableau de bord</a>
@@ -43,7 +43,18 @@
             name="matiere"
             placeholder="Saisir la matière enseignée"
             required
-          />        </div>
+          />     
+       </div>
+       <div class="form-group">
+        <label for="matiere">Sous matière</label>
+        <input
+          type="text"
+          id="matiere"
+          name="matiere"
+          placeholder="Saisir la matière enseignée"
+          required
+        />
+        </div>
         <div class="form-group">
           <label for="titre">Titre de l'annonce</label>
           <input
@@ -56,25 +67,54 @@
           <!--Radio pour nombre d'élève date et heure séparé lieu du cours à préciser-->
         </div>
         <div class="form-group">
-          <label for="date">Date et heure du cours</label>
-          <input type="datetime-local" id="date" name="date" required />
+          <label for="descriptif">Description du cours</label>
+          <input type="text" id="descriptif" placeholder="Entrez plus de préicision sur votre cours si vous le désirez.">
+        </div>
+        <div class="lieu">
+          <label for="text">Lieu du cours</label>
+          <select required id='departement'>
+            <option value="" disabled selected>Département</option>
+            <option value="polytech">Polytech</option>
+            <option value="centrale">Centrale</option>
+            <option value="ens">ENS</option>
+            <option value="universite_paris_saclay">Université Paris-Saclay</option>
+        </select>
+      </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div>
+          <label for="heure">Heure du cours</label>
+          <input type="time" id="heure" name="heure" required/>
+          <br>
+          <br>
         </div>
         <div class="form-group">
           <label for="nombre-eleves">Nombre d'élèves désiré</label>
-          <input
-            type="number"
-            id="nombre-eleves"
-            name="nombre-eleves"
-            placeholder="Saisir le nombre d'élèves désiré"
-            min="1"
-            max="50"
-            required
-          />
+          <div class="radio-buttons">
+            <input type="radio" id="choiceunique" name="nombre-eleves" value="un seul élève" required  checked/>
+            <b for="choiceunique">Un seul élève</b>
+          </div>
+          <div class="radio-buttons">
+            <input type="radio" id="choicemultiple" name="nombre-eleves" value="plusieurs élèves"/>
+            <b for="choicemultiple">Plusieurs élèves</b>
+          </div>
+          <div class="nbeleve">
+            <br>
+            <input type="number" id="nbeleve" name = "nbeleve" value="choisirnbeleve" placeholder="séléctionnez le nombre d'élèves"/>
+          </div>
+          <br>
+          <br> 
+          <div class="radio-button">
+            <button type="submit">Publier</button>
+            <button type="reset">Réinitialiser</button>
+            
+          </div>
         </div>
-        <div class="form-group">
-          <button type="submit">Publier</button>
-          <button type="reset">Réinitialiser</button>
-        </div>
+        
+            
+      
       </form>
     </div>
     <script src="script.js"></script>
