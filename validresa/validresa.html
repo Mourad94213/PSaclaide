@@ -4,35 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title>Validation de réservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="validresa.css">
 </head>
 
 <body>
-    <img src="./logo-PhotoRoom.png-PhotoRoom.png" alt="logopsaclaide" height="200" width="200" />
-    <div class="container">
+    <img src="./logodetoure.png" alt="logopsaclaide" height="100" width="100">
+
+    <div class="container mt-5">
         <h1>Vous êtes sur le point de réserver un cours</h1>
         <p>Après validation, vous receverez un email sur votre boîte mail universitaire récapitulant les informations du cours.</p>
         <p>Voici Vos détails de réservation :</p>
-        <php
-            <br>
-            echo 'nom : ' .$_POST["nom"].<br>
-            echo 'prenom : ' .$_POST["prenom"].<br>
-            echo 'departement : ' .$_POST["departement"].<br>
-            echo 'matiere' : ' .$_POST["matiere"]'<br>
-            echo 'logo' : '.$_GET[universitu_logo]'<br>
-            echo 'horaires' : '.$_GET[horaires]'<br>
-             
-        >
-        <br>
-
+        <p>
+            <?php
+                echo 'nom : ' .$_POST["nom"].'<br>';
+                echo 'prenom : ' .$_POST["prenom"].'<br>';
+                echo 'departement : ' .$_POST["departement"].'<br>';
+                echo 'matiere : ' .$_POST["matiere"].'<br>';
+                echo 'logo : '.$_GET["universitu_logo"].'<br>';
+                echo 'horaires : '.$_GET["horaires"].'<br>';
+            ?>
+        </p>
         
         <div class="button">    
-            <button class="ghost" id="annuler" onclick="Annonce/annonce.html">Annuler</button>
-            <button class="ghost" id="validation"onclick="Dashboard/dashboard.html">Validation</button>
+            <button  id="annuler" class="mx-3 ghost">Annuler</a>
+            <button  id="validation" class="ghost">Validation</a>
         </div>
     </div>
-    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

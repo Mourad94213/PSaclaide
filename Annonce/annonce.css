@@ -109,6 +109,14 @@ button:focus {
     margin: 20px 0;
 }
 
+input#dateselect{
+    border-radius: 8px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 13px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.125),
+            0 5px 5px rgba(0, 0, 0, 0.11);
+}
 .filters-container {
     background-color: #fff;
     border-radius: 10px;
@@ -401,9 +409,14 @@ header {
 .results-container {
         width: 80%;
 }
+
 }
+
+
+
 @media (max-width: 480px) {
     .search-input {
     width: 100%;
     }
     }
+

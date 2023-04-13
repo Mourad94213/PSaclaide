@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page principale</title>
+    <link rel="stylesheet" href="annonce.css">
+    <!-- Ajout de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6">
+                    <div class="logo">
+                        <img src="Annonce/logodetoure.png" alt="logopsaclaide" height="50" style="float:left" />
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 text-right">
+                    <button id="logout" class="btn btn-outline-dark">
+                        <i class="fas fa-sign-out-alt"></i> Déconnexion
+                    </button>
+                    <div class="profile-container">
+                        <img src="./img/test.jpg" alt="Photo de profil" class="profile-picture" />
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Options
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Mes Cours</a>
+                            <a href="#" class="dropdown-item">Tableau de bord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <input type="search" class="search-input form-control" placeholder="Recherche..." logo="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="filters-container">
+            <h3>Filtres</h3>
+            <div class="sub-filter">
+                <h4>jour</h4>
+                <div class="checkbox-container">
+                    <input type="date" name="data[]" id="dateselect" class="form-control" />
+                </div>
+                <h4>Horaire</h4>
+                <div class="checkbox-container">
+                    <div class="form-check">
+                        <input type="checkbox" name="horaire" id="8" value="8" class="form-check-input" />
+                        <label class="form-check-label" for="8">8h00 - 9h00</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="horaire" id="9" value="9" class="form-check-input" />
+                        <label class="form-check-label" for="9">9h00 - 10h00</label>
+                    </div>
+                    <nav id="filtresheure">
+                        <button aria-expanded="false"

@@ -4,31 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publier une annonce de cours</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,800"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="creerannonce.css" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img
-          src="./logodetoure.png"
-          alt="logopsaclaide"
-          height="50"
-          style="float: right"
-        />
-      </div>
-      <button id="logout">
-        <i class="fas fa-sign-out-alt"></i> Déconnexion
-      </button>
-      <div class="profile-container">
-        <img src="./logopolytech.png" alt="Photo de profil" class="profile-picture" />
-        <div class="dropdown-menu" id="dropdown-menu">
-          <a href="#">Options</a>
-          <a href="#">Mes Cours</a>
-          <a href="#">Tableau de bord</a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="logo">
+              <img src="./logodetoure.png" alt="logopsaclaide" height="50" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-right">
+              <button id="logout" class="btn btn-primary">
+                <i class="fas fa-sign-out-alt"></i> Déconnexion
+              </button>
+            </div>
+            <div class="float-right profile-container">
+              <img src="./logopolytech.png" alt="Photo de profil" class="profile-picture" />
+              <button
+                class="btn btn-primary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Options
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Mes Cours</a>
+                <a class="dropdown-item" href="#">Tableau de bord</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -37,42 +49,23 @@
       <form id="annonce-form">
         <div class="form-group">
           <label for="matiere">Matière enseignée</label>
-          <input
-            type="text"
-            id="matiere"
-            name="matiere"
-            placeholder="Saisir la matière enseignée"
-            required
-          />     
-       </div>
-       <div class="form-group">
-        <label for="matiere">Sous matière</label>
-        <input
-          type="text"
-          id="matiere"
-          name="matiere"
-          placeholder="Saisir la matière enseignée"
-          required
-        />
+          <input type="text" id="matiere" name="matiere" class="form-control" placeholder="Saisir la matière enseignée" required />
+        </div>
+        <div class="form-group">
+          <label for="sous-matiere">Sous matière</label>
+          <input type="text" id="sous-matiere" name="sous-matiere" class="form-control" placeholder="Saisir la sous-matière enseignée" required />
         </div>
         <div class="form-group">
           <label for="titre">Titre de l'annonce</label>
-          <input
-            type="text"
-            id="titre"
-            name="titre"
-            placeholder="Saisir le titre de l'annonce"
-            required
-          />
-          <!--Radio pour nombre d'élève date et heure séparé lieu du cours à préciser-->
+          <input type="text" id="titre" name="titre" class="form-control" placeholder="Saisir le titre de l'annonce" required />
         </div>
         <div class="form-group">
           <label for="descriptif">Description du cours</label>
-          <input type="text" id="descriptif" placeholder="Entrez plus de préicision sur votre cours si vous le désirez.">
+          <textarea id="descriptif" class="form-control" placeholder="Entrez plus de précision sur votre cours si vous le désirez."></textarea>
         </div>
-        <div class="lieu">
-          <label for="text">Lieu du cours</label>
-          <select required id='departement'>
+        <div class="form-group">
+          <label for="departement">Lieu du cours</label>
+          <select id="departement" name="departement" class="form-control" required>
             <option value="" disabled selected>Département</option>
             <option value="polytech">Polytech</option>
             <option value="centrale">Centrale</option>
