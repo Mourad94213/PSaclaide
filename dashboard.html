@@ -1,47 +1,204 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        #main-content {
+        margin-left: 220px;
+    }
+</style>
 </head>
 <body>
     <header>
-        <button id="logout">
-            <i class="fas fa-sign-out-alt"></i> Déconnexion
-        </button>
-        <div class="profile-container">
-            <img src="test.jpg" alt="Photo de profil" class="profile-picture" />
-            <div class="dropdown-menu">
-                <a href="#">Options</a>
-                <a href="#">Mes Cours</a>
-                <a href="#">Tableau de bord</a>
+        <style>
+            
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f5f7;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF416C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    float: left
+}
+
+button {
+    color:white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    color: black;
+}
+button:focus {
+    outline: none;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    color: black;
+    display: block;
+    padding: 10px 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-container:hover .dropdown-menu {
+    display: block;
+}
+        </style>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="logo">
+                        <img src="./logodetoure.png" alt="logopsaclaide" height="50" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-9">
+                    <nav class="nav-right">
+                        <button id="switch" class="switch-btn btn btn-primary">Passer en professeur</button>
+                        <button id="logout" class="btn btn-secondary">
+                            <i class="fas fa-sign-out-alt"></i> Déconnexion
+                        </button>
+                        <div class="profile-container">
+                            <img src="./test.jpg" alt="Photo de profil" class="profile-picture" />
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Options
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Mes Cours</a>
+                                <a class="dropdown-item" href="#">Tableau de bord</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
-
-    <main>
-        <div class="dashboard-container">
-            <h1>Tableau de bord</h1>
-            <section class="previous-courses">
-                <h2>Cours précédents</h2>
-                <ul>
-                    <li>Cours de Mathématiques - 10/03/2023</li>
-                    <li>Cours de Physique - 12/03/2023</li>
-                    <li>Cours de Chimie - 15/03/2023</li>
+    <div id="sidebar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Tableau de bord</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
                 </ul>
-            </section>
-
-            <section class="upcoming-courses">
-                <h2>Prochains cours réservés</h2>
-                <ul>
-                    <li>Cours de Philosophie - 20/03/2023</li>
-                    <li>Cours de Biologie - 22/03/2023</li>
-                    <li>Cours de Français - 25/03/2023</li>
-                </ul>
-            </section>
+            </div>
+        </nav>
+    </div>
+    <div id="main-content" class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Users</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Number of users in system</h6>
+                        <p class="card-text">500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Cours précédents</h2>
+                        <ul>
+                            <li>Cours de Mathématiques - 10/03/2023</li>
+                            <li>Cours de Physique - 12/03/2023</li>
+                            <li>Cours de Chimie - 15/03/2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Active Users</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Number of active users in system</h6>
+                        <p class="card-text">100</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+

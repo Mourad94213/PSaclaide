@@ -4,31 +4,74 @@
 <head>
     <meta charset="utf-8" />
     <title>Formulaire d'inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="profil.css">
 </head>
 
 <body>
+    <header>
+        <p> baier</p>
+    </header>
     <div class="container">
-        <h2>Completez votre profil afin de finaliser votre inscription</h2>
-        <form action="#">
-            <input type="text" placeholder="Nom" id= 'nom' required />
-            <input type="text" placeholder="Prénom" id='prenom' required />
-            <input type="date" placeholder="Date de naissance" id="birth" required />
-            <select required id='departement'>
-                <option value="" disabled selected>Département</option>
-                <option value="polytech">Polytech</option>
-                <option value="centrale">Centrale</option>
-                <option value="ens">ENS</option>
-                <option value="universite_paris_saclay">Université Paris-Saclay</option>
-            </select>
-            <label class="checkbox-container">
-                Je souhaite également être professeur
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-            </label>
-            <button type="submit" onclick="Dashboard/dashboard.html">Finaliser mon inscription</button>
-        </form>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Completez votre profil afin de finaliser votre inscription</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Votre Nom" required>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Votre Prénom" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="birth">Date de naissance:</label>
+                    <input type="date" class="form-control" id="birth" required>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="departement">Département:</label>
+                    <select class="form-control" id="departement" required>
+                        <option value="" disabled selected>Département</option>
+                        <option value="polytech">Polytech</option>
+                        <option value="centrale">Centrale</option>
+                        <option value="ens">ENS</option>
+                        <option value="universite_paris_saclay">Université Paris-Saclay</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="radio">
+                    <label>
+                        <input type="radio"><br>je souahite également être professeur
+                        
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary btn-block" onclick="Dashboard/dashboard.html">Finaliser mon inscription</button>
+            </div>
+        </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
