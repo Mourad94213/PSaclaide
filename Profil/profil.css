@@ -138,3 +138,7 @@ button:hover{
     transform: rotate(45deg);
 }
 
+.btn.btn-primary.btn-block {
+    background: #Ff416c;
+  border-color: #Ff416c;
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>profil_dashboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		<link rel="stylesheet" href="css/stylesidebar.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+					<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.png);"></a>
+					<ul class="list-unstyled components mb-5">
+						<li class="active">
+							<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" >Mon profil</a>
+						</li>
+						<li>
+							<a href="#">Mes cours</a></li>
+						<li>
+							<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" >Historique</a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#">à propos</a>
+						</li>
+						<div class="space"></div>
+						<li>
+							<div class = slider>
+								<a href="#" class="btn btn-primary btn-lg active " id = "slider1" role="button" aria-pressed="true">Mode élève</a>
+								<div class="space"></div>
+								<a href="#" class="btn btn-primary btn-lg active" role="button" id="slider2" aria-pressed="true">Mode professeur</a>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+			<!-- Page Content  -->
+			<div id="content" class="p-4 p-md-5">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container-fluid">
+						<button type="button" id="sidebarCollapse" class="btn btn-primary">
+							<i class="fa fa-bars"></i>
+							<span class="sr-only">Toggle Menu</span>
+						</button>
+						<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="nav navbar-nav ml-auto">
+								<li class="nav-item active">
+									<button class="btn btn-primary" id="cours" href="#">Réserver un cours</a>
+								</li>
+								<div class="space"></div>
+								<li class="nav-item active">
+									<button class="btn btn-primary" id="cours" href="#">Créer une annonce</a>
+								</li>
+								<div class="space"></div>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="imgprofil" class="img-fluid" src="./images/logopolytech.png">Mehdi</a>
+									
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Profil</a>
+										
+										<a class="dropdown-item" href="#">Déconnexion</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="container rounded mt-5 mb-5 ">
+					<div class="row">
+						<div class="col-md-3 border-right">
+							<div class="d-flex flex-column align-items-center text-center p-3 py-5">
+								<img class="rounded-circle mt-5" width="150px" src="./images/logopolytech.png">
+								<span class="font-weight-bold">Mehdi</span>
+								<span class="mail">etudiant@université-paris-saclay.fr</span>
+								<span></span>
+							</div>
+						</div>
+						<div class="col-md-5 border-right">
+							<div class="form-container p-3 py-5">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="text-right">Paramètres du profil</h4>
+								</div>
+								<div class="row mt-2">
+									<div class="col-md-6">
+										<label class="labels">Prénom</label>
+										<input type="text" class="form-control" placeholder="Votre prénom" value="">
+									</div>
+									<div class="col-md-6">
+										<label class="labels">Nom de famille</label>
+										<input type="text" class="form-control" value="" placeholder="Votre nom de famille">
+									</div>
+								</div>
+								<div class="row mt-3">
+									<div class="col-md-12">
+										<label class="labels">Numéro de téléphone</label>
+										<input type="text" class="form-control" placeholder="Ajoute ton numéro de téléphone" value="">
+									</div>
+									<div class="col-md-12">
+										<label class="labels">Addresse</label>
+										<input type="text" class="form-control" placeholder="entre ton adresse" value="">
+									</div>
+									<div class="col-md-12">
+										<label class="labels">Ecole</label>
+										<select class="form-control" id="departement">
+											<option value="" disabled selected>Département</option>
+											<option value="polytech">Polytech</option>
+											<option value="centrale">Centrale</option>
+											<option value="ens">ENS</option>
+											<option value="universite_paris_saclay">Université Paris-Saclay</option>
+										</select>
+									</div>
+									<div class="col-md-12">
+										<label class="labels">Spécialité</label>
+										<input type="text" class="form-control" placeholder="Ta spécialité au sein de ton établissement" value="">
+									</div>
+								</div>
+								<div class="submitbtn mt-5 text-center">
+									<button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="p-3 py-5">
+								<br>
+								<div class="col-md-12">
+									<label class="labels">Détails supplémentaires</label>
+									<input type="text" class="form-control" placeholder="ajouter quelque chose !" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
