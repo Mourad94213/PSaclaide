@@ -141,7 +141,10 @@ button:hover{
 .btn.btn-primary.btn-block {
     background: #Ff416c;
   border-color: #Ff416c;
+<<<<<<< HEAD:dashboard/css/profil.css
 }
 #labelsmodifprofil{
     transform: translateY(10px);
+=======
+>>>>>>> fcaf176a03b0864b849ab2555b9c7ff1e231c05a:Profil/profil.css
 }

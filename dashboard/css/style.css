@@ -86,10 +86,13 @@ body {
 #submitapropos{
     box-shadow: 0 8px 24px rgba(0,32,68,.45),
         0 8px 8px rgba(0,32,68,.45);
+<<<<<<< HEAD
 }
 #colonnededroite{
     transform: translateY(34px);
 }
 #labelsmodifprofil{
     transform: translateY(10px);
+=======
+>>>>>>> fcaf176a03b0864b849ab2555b9c7ff1e231c05a
 }
