@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page principale</title>
+    <link rel="stylesheet" href="css/annonce.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+	<link rel="stylesheet" href="css/stylesidebar.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.png);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" >Mon profil</a>
+                    </li>
+                    <li>
+                        <a href="#">Mes cours</a></li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" >Historique</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li class="active">
+                        <a href="#">à propos</a>
+                    </li>
+                    <div class="space"></div>
+                    <li>
+                        <div class = slider>
+                            <a href="#" class="btn btn-primary btn-lg active " id = "slider1" role="button" aria-pressed="true">Mode élève</a>
+                            <div class="space"></div>
+                            <a href="#" class="btn btn-primary btn-lg active" role="button" id="slider2" aria-pressed="true">Mode professeur</a>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active"><button class="btn btn-primary" id="cours" href="#">Réserver un cours</a></li>
+                            <div class="space"></div>
+                            <li class="nav-item active"><button class="btn btn-primary" id="cours" href="#">Créer une annonce</a></li>
+                            <div class="space"></div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="imgprofil" class="img-fluid" src="./images/logopolytech.png">Mehdi</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Profil</a>
+                                    
+                                    <a class="dropdown-item" href="#">Déconnexion</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <div class="search-container">
+            <input type="search" class="search-input" placeholder="Recherche..." logo=""/>
+        </div>
+        <div class="main-container">
+            <div class="filters-container">
+                <h3>Filtres</h3>
+                    
+                <div class="sub-filter">
+                    <h4>jour</h4>
+                    <div class="checkbox-container">
+                        <input type="date" name="data[]" id="dateselect">   
+                    </div>
+                    <h4>Horaire</h4>
+                    <div class="checkbox-container">
+                        <label><input type="checkbox" name="horaire" id="8" value="8"> 8h00 - 9h00</label>
+                        <label><input type="checkbox" name="horaire" id="8"value="9"> 9h00 - 10h00</label>
+                        <nav id="filtresheure">
+                            <button aria-expanded="false" id="">Tout afficher</button>
+                            <ul hidden>
+                                <label><input type="checkbox" name="horaire" value="10"> 10h00 - 11h00</label>
+                                <label><input type="checkbox" name="horaire" value="11"> 11h00 - 12h00</label>
+                                <label><input type="checkbox" name="horaire" value="12"> 12h00 - 13h00</label>
+                                <label><input type="checkbox" name="horaire" value="13"> 13h00 - 14h00</label>
+                                <label><input type="checkbox" name="horaire" value="14"> 14h00 - 15h00</label>
+                                <label><input type="checkbox" name="horaire" value="15"> 15h00 - 16h00</label>
+                                <label><input type="checkbox" name="horaire" value="16"> 16h00 - 17h00</label>
+                                <label><input type="checkbox" name="horaire" value="17"> 17h00 - 18h00</label>
+                                <label><input type="checkbox" name="horaire" value="18"> 18h00 - 19h00</label>
+                                <label><input type="checkbox" name="horaire" value="19"> 19h00 - 20h00</label>
+                                <label><input type="checkbox" name="horaire" value="20"> 20h00 - 21h00</label>
+                            </ul>
+                        </nav>  
+                    </div>
+                </div>    
+                <div class="sub-filter">
+                    <h4>École</h4>
+                    <div class="checkbox-container">
+                        <label><input type="checkbox" name="ecole" value="Polytech"> Polytech</label>
+                        <label><input type="checkbox" name="ecole" value="Centrale"> Centrale</label>
+                        <label><input type="checkbox" name="ecole" value="ENS"> L'ENS</label>
+                        <label><input type="checkbox" name="ecole" value="Universite Paris-Saclay"> Université Paris-Saclay</label>
+                    </div>
+                </div>
+                <div class="sub-filter">
+                    <h4>Type de cours</h4>
+                    <div class="checkbox-container">
+                        <label><input type="checkbox" name="type" value="Individuel"> Individuel</label>
+                        <label><input type="checkbox" name="type" value="Collectif"> Collectif</label>
+                    </div>
+                </div>
+            </div>
+            <div class="results-container">
+                <h3>Résultats de la recherche</h3>
+                <div class="result-card">
+                    <img src="../img/test2.jpg" alt="Photo du professeur" class="teacher-picture" />
+                </div>
+                <div class="info-container">
+                    <h4>Nom du professeur</h4>
+                    <p>Matière enseignée</p>
+                    <p>École</p>
+                    <div class="dropup">
+                        <button class="dropbtn">Dropup</button>
+                        <div class="dropup-content">
+                        <span>LoremLorem ipsum changes the way copy is viewed. It reduces text-based content to a visual design element — a shape of text — instead of what it should be: valuable information someone is going to have to enter and/or read. Dummy text means you won't see the inevitable variations that show up once real information is entered. It means you won't know what it's like to fill out forms on your site. Dummy text is a veil between you and reality.0</span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                <!-- Ajoutez plus de résultats ici -->
+            </div>
+        
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+
+
+

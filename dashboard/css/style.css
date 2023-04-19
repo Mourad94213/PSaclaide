@@ -1,0 +1,95 @@
+body {
+    background:white
+}
+
+.container{
+    background-color: #f7e6eb;
+    border:solid #2d000d;
+    overflow: auto;
+    height: fit-content;
+    max-height: 600px;
+    
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+.text-right{
+    color: #2d000d;
+}
+.font-weight-bold{
+    color: #2d000d;
+}
+.mail{
+    color: #2d000d;
+}
+
+.submitbtn{
+    color: #Ff416c;
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px;
+    color: #2d000d;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+#card-body{
+    border-radius: 10%;
+}
+.btn.btn-default:hover{
+    color: rgba(0, 0, 0, 0.9);
+}
+#trashbtn{
+    font-size: 30px;
+    color:#2d000d;
+    float: right;
+    
+}
+
+#trashbtn:hover{
+    color: black;
+}
+
+#submitapropos{
+    box-shadow: 0 8px 24px rgba(0,32,68,.45),
+        0 8px 8px rgba(0,32,68,.45);
+}
+#colonnededroite{
+    transform: translateY(34px);
+}
+#labelsmodifprofil{
+    transform: translateY(10px);
+}

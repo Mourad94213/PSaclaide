@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f5f7;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+}
+
+.logo {
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    align-items:end;
+}
+
+b {
+    text-align: center;
+    font-weight: normal;
+    
+}
+.container {
+    margin:50px auto;
+    max-width: 800px;
+    max-height: fit-content;
+    padding: 0 20px;
+    background-color: #FF416C;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+           display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+    color: whitesmoke;
+}
+
+.nbeleve {
+    display: block;
+    
+}
+
+select#departement {
+    border-radius: 5px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 16px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+  
+input#date {
+    border-radius: 5px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 16px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input#heure {
+    border-radius: 5px; /* ajouter un border-radius de 5px */
+    padding: 8px; /* ajouter un padding de 8px pour augmenter la taille de la boîte de sélection */
+    font-size: 16px; /* ajouter une taille de police de 16px */
+    border: 1px solid #ccc; /* ajouter une bordure de 1px de couleur grise */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input#descriptif{
+    height: 100px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+  
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: color 0.3s;
+    box-shadow: 0 8px 24px rgba(0,32,68,.45),
+        0 8px 8px rgba(0,32,68,.45);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0,32,68,.45);
+    color: #711C1C;
+}
+
+button:focus {
+    outline: none;
+}
+
+.radio-buttons {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    transform: translateX(15px);
+  }
+
+.radio-button {
+    transform: translateX(10px);
+}
+#logout i {
+    margin-right: 5px;
+}
+
+
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    display: block;
+    padding: 10px 16px;
+    text-align: left;
+    text-decoration: none;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+    
+}
+
+.profile-container:hover .dropdown-menu {
+    display:block;
+    /*transition: .5s ease-in;*/
+}
+
+
+
+    
+h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+    
+.form-group {
+    margin-bottom: 20px;
+}
+    
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: white;
+}
+    
+input[type="text"],
+input[type="number"],
+
+input[type="datetime-local"] {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+    color: #666;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    
+}
+    
+input[type="text"]:focus,
+input[type="number"]:focus,
+
+input[type="datetime-local"]:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+button[type="submit"],
+
+button[type="reset"] {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #5a2a2a;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+    
+button[type="submit"]:hover,
+
+button[type="reset"]:hover {
+        cursor: pointer;
+        background-color: rgba(0,32,68,.45);
+        color: #471b26;
+}
+    
+button[type="submit"]:focus,
+    
+button[type="reset"]:focus {
+    outline: none;
+}
+
+    
+    /* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+    margin: 30px auto;
+}
+    
+h1 {
+    font-size: 24px;
+}
+    
+input[type="text"],
+input[type="number"],
+
+input[type="datetime-local"] {
+    font-size: 14px;
+    padding: 8px;
+}
+    
+button[type="submit"],
+button[type="reset"] {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+}
+#h1creerannonce{
+    color:white;
+}
+#containercreerannonce{
+    opacity: 95%;
+}

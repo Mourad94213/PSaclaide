@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Finaliser_inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/profil.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Completez votre profil afin de finaliser votre inscription</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label class="labelsmodifprofil"for="prenom">Prénom :</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Votre Prénom" required>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label class="labelsmodifprofil"for="nom">Nom :</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Votre Nom" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label class="labelsmodifprofil"for="birth">Date de naissance :</label>
+                    <input type="date" class="form-control" id="birth" required>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label class="labelsmodifprofil"for="departement">Département :</label>
+                    <select class="form-control" id="departement" required>
+                        <option value="" disabled selected>Département</option>
+                        <option value="polytech">Polytech</option>
+                        <option value="centrale">Centrale</option>
+                        <option value="ens">ENS</option>
+                        <option value="universite_paris_saclay">Université Paris-Saclay</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <label class="labelsmodifprofil"id="labelsmodifprofil" class="labels">Ecole :</label>
+                <select class="form-control" id="departement" required>
+                    <option value="" disabled selected>Département</option>
+                    <option value="polytech">Polytech</option>
+                    <option value="centrale">Centrale</option>
+                    <option value="ens">ENS</option>
+                    <option value="universite_paris_saclay">Université Paris-Saclay</option>
+                </select>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <label class="labelsmodifprofil"id="labelsmodifprofil" class="labels">Spécialité :</label>
+                <!-- FAUDRAIT METTRE UN SELECT ICI MAIS YA TROP DE SPE A LUNIVERSITE-->
+                <input type="text" class="form-control" placeholder="Ta spécialité au sein de ton établissement" value="" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="radio">
+                    <label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+                            <label class="labelsmodifprofil"class="form-check-label" for="flexSwitchCheckDefault">Je veux être professeur</label>
+                          </div>
+                        
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="submit" id="submit" class="btn btn-primary btn-block" onclick="Dashboard/dashboard.html">Finaliser mon inscription</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
